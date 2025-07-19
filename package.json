@@ -1,8 +1,6 @@
 {
   "name": "random-meme-api",
   "version": "1.0.0",
-  "main": "api/meme.js",
-  "scripts": {
-    "start": "vercel dev"
-  }
+  "main": "index.js",
+  "license": "MIT"
 }
