@@ -1,4 +1,4 @@
-export default async function handler(req, res) {
+export default function handler(req, res) {
   const memes = [
     "https://i.imgflip.com/1bij.jpg",
     "https://i.redd.it/3t9a3y19glf51.jpg",
@@ -8,6 +8,6 @@ export default async function handler(req, res) {
   ];
 
   const randomMeme = memes[Math.floor(Math.random() * memes.length)];
-  res.setHeader("Content-Type", "image/jpeg");
-  res.redirect(randomMeme);
+  res.writeHead(302, { Location: randomMeme });
+  res.end();
 }
