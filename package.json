@@ -1,6 +1,6 @@
 {
   "name": "random-meme-api",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "api/meme.js",
   "license": "MIT"
 }
